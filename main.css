@@ -1,0 +1,195 @@
+@import url("https://fonts.googleapis.com/css?family=Work+Sans");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Work Sans", sans-serif;
+}
+
+:root {
+  --background: #1f2937;
+  --colour-bold: #f9faf8;
+  --colour-dim: #e5e7eb;
+
+  --bg-quote: #e5e7eb;
+  --action-btn: #3882f6;
+
+  --quote-text: #1f2937;
+
+  --text-48: 48px;
+  --text-36: 36px;
+  --text-24: 24px;
+}
+
+.nav,
+.nav-items {
+  display: flex;
+  list-style: none;
+}
+
+.nav {
+  justify-content: space-around;
+  align-items: center;
+  padding: 32px;
+  background-color: var(--background);
+}
+
+.logo {
+  font-size: large;
+  font-weight: bold;
+  color: var(--colour-bold);
+}
+
+.nav-items {
+  gap: 10px;
+}
+
+.nav-items li a {
+  text-decoration: none;
+  color: var(--colour-dim);
+}
+
+.main-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: var(--background);
+  padding: 2rem;
+}
+
+.text {
+  max-width: 400px;
+  color: var(--colour-dim);
+}
+
+.text h1 {
+  margin-bottom: 10px;
+  font-weight: bolder;
+  font-size: var(--text-48);
+}
+
+.text p {
+  margin-bottom: 10px;
+  margin-top: 5px;
+}
+
+.text button {
+  margin-top: 15px;
+  border-radius: 8px;
+  padding: 8px 32px;
+  border: none;
+  background-color: var(--action-btn);
+  color: white;
+  cursor: pointer;
+}
+
+.main-content img {
+  height: 400px;
+  width: auto;
+}
+
+.information {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 0 20px 0;
+  padding: 4rem;
+}
+
+.information h1 {
+  font-size: var(--text-36);
+  padding: 10px 0 10px 0;
+  margin-bottom: 20px;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  text-align: center;
+}
+
+.card {
+  max-width: 200px;
+  background-image: url("");
+}
+
+.card .informations {
+  height: 200px;
+  width: 200px;
+  border: 2px solid var(--action-btn);
+  border-radius: 4px;
+}
+
+.quote {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--bg-quote);
+  padding: 6rem;
+}
+
+.quotecontent {
+  width: 800px;
+}
+
+.quotecontent p {
+  color: var(--quote-text);
+  font-size: 36px;
+  font-style: italic;
+  font-weight: 200;
+}
+
+.quotecontent h4 {
+  display: flex;
+  flex-direction: row-reverse;
+  font-style: normal;
+  font-weight: bold;
+}
+
+.calltoaction {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem;
+}
+
+.widget {
+  display: flex;
+  color: white;
+  background-color: #3882f6;
+  padding: 3rem 8rem;
+  border-radius: 20px;
+  gap: 3rem;
+}
+
+.widget button {
+  border-radius: 8px;
+  padding: 8px 32px;
+  border: 1px solid white;
+  background-color: transparent;
+  color: white;
+  cursor: pointer;
+
+  transition: all 0.4s ease;
+}
+
+.widget button:hover {
+  background-color: white;
+  color: var(--action-btn);
+}
+
+.widget .txt {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.footer {
+  padding: 2rem;
+  background-color: #1f2937;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
